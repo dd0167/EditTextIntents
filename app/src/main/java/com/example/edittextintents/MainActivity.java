@@ -117,7 +117,14 @@ public class MainActivity extends AppCompatActivity {
             {
                 sum=sum/num;
             }
-            display.setText(""+sum);
+            if((((double)((int)sum))==(double)sum))
+            {
+                display.setText(String.valueOf((int)sum));
+            }
+            else
+            {
+                display.setText(""+sum);
+            }
             anssum=sum;
             sum=0;
         }
